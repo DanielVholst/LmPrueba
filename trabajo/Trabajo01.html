@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+
+		<!--ESTILOS CSS-->
+		<!--<style type="text/css">
+			*{background-color:silver;border:solid:1px;}
+			*.center{ padding-left: 100px }
+			*.tab{padding-left:40px }
+		</style>-->
+		<title> Manual de Html </title>
+		<meta charset="UTF-8" >
+	</head>
+
+	<body>
+	</br>
+		<!--Indice de enlaces:-->
+		<h3 id="indice">Indice:</h3>
+		<a href=#inicio>Inicio.</a>
+		<a href=#estructura>Estructura.</a>
+		<a href=#head>Cabecera.</a>
+		<a href=#body>Cuerpo.</a>
+		<a href=#titulo>Titulos.</a>
+		<a href=#letra>Manejo de texto.</a>
+		<a href=#ul>Listas desordenadas.</a>
+		<a href=#ol>Listas ordenadas.</a>
+		<a href=#dl>Listas de definiciones.</a>
+		<a href="#enlaces">Enlaces.</a>
+		<a href="#imagenes">Imagenes.</a>
+		<a href="#tablas">Tablas.</a>
+		<a href="#imapa">Mapa de imagenes.</a>
+		<!--Inicio-->
+		<h1 id="Inicio"><u> Guia de HTML </u></h1>
+		<hr>
+		<!--HEAD/BODY/FOOT-->
+			<h2 id="estructura"> Estructura: &lthtml&gt</h2>
+				<p>La estructura del documento html es simple:<br>
+				Para empezar declararemos el tipo de documento con: &lt!DOCTYPE html&gt ,despues abriremos la etiqueta html y subdividiremos el documento en 3 partes:
+				</p>
+				<dl class="center">
+					<dt><b>HEAD:</b></dt>
+						<dd>Es la cabecera del documento. En ella se puede declarar titulos, estilos, enlaces, y la codificación.</dd>
+					<dt><b>BODY:</b></dt>
+						<dd>Es el cuerpo del documento. Es lo que se visualiza en el navegador.</dd>
+					<dt><b>FOOT:</b></dt>
+						<dd>Es el pié del documento.</dd>
+				</dl>
+		<!--HEAD-->
+		<hr>
+			<h2 id="head"><u>Head:</u> &lthead&gt </h2>
+			<p class="tab">
+				En la cabecera del documento se encuentran:
+			</p>
+			<dl class="center">
+					<dt><b>TITLE: </b>&lttitle&gt</dt>
+						<dd>Es el título que cogerá el navegado para presentarlo en la parte superior.</dd>
+					<dt><b>META: </b>&ltmeta&gt</dt>
+						<dd>Es el tipo de codificación que usará el navegador para visualizar el documento.</dd>
+					<dt><b>LANG: </b>&ltlang&gt</dt>
+						<dd>Es el lenguaje en el que está escrito del documento.</dd>
+					<dt><b>STYLE: </b>&ltstyle&gt</dt>
+						<dd>Es donde introduciremos los estilos de CSS para dar formato a la pagina.</dd>
+			</dl>
+		<hr>
+		<!--BODY-->
+			<h2  id="body"><u>Body:</u>&ltbody&gt</h2>	
+			<p class="tab">
+				En el cuerpo del documento se encuentran:
+			</p>
+			<dl class="center">
+					<dt><b><big>Elementos de bloque:</big></b></dt>
+						<dd>Pueden contener otros elementos de línea o de bloque y siempre comienzan en una linea nueva</dd>
+					<dt><b><big>Elementos de Linea:</big></b></dt>
+						<dd>Solo contienen datos y a otros elementos de línea.</dd>
+					
+			</dl>
+			<p class="tab">Ahora listaremos algunos elementos de bloque y linea e indagaremos en ellos: </p>
+			<dl>
+			<hr>
+				<!--H1...H6-->
+				<dt id="titulos"><big><b>Manejo de texto: &lth1...h6&gt</big></b></dt>
+					<dd>Establecen encabezados y diferentes tamaños de títulos. Es un elemento de línea. Se clasifican de <b>h1</b> (el mas grande) a <b>h6</b> (el mas pequeño.)
+					</dd>
+					<h1>h1</h1>
+					<h2>h2</h2>
+					<h3>h3</h3>
+					<h4>h4</h4>
+					<h5>h5</h5>
+					<h6>h6</h6>
+			<hr>
+				<!--HMANEJO DE TEXTO-->
+				<dt id="letra"><big><b>Manejo de texto: &ltp&gt </big></b></dt>
+					<dd>Establece una agrupacion de lineas de texto en un parrafo. En el texto los saltos de linea deben ser explicitos,
+						para ello utilizaresmos la etiqueta <b>&ltbr&gt</b> Tambien podemos hacer que se visualize una linea horizontal que sirve 
+						para separar parrafos o temas entre si. Otra etiqueta que podemos encontrar es: <b>&ltwbr&gt</b>, la cual sirve para crear 
+						saltos de linea en una palabra si el navegador reduce su formato.<br>
+						<br>
+						Hay otras etiquetas en el manejo de texto que permite establecer los diferentes tipos de fuentes. Todas ellas se definen dentro del parrafo o etiqueta <b>&ltp&gt.</b> <br>
+						<br>
+						<b>La etiqueta &ltb&gt establece el texto en negrita.</b><br>
+						<i>La estiqueta &lti&gt establece el texto en cursiva.</i><br>
+						<u>La etiquta &ltu&gt subraya todo el texto</u><br>
+						<s> La etiqueta</s> &lts&gt o &ltstrike&gt <s>tacha el texto.</s><br>
+						<big>La etiqueta &ltbig&gt establece un tamaño superior al texto.</big><br>
+						<small>L etiqueta &ltsmall&gt establace un tamaño de texto inferior</small><br>
+						<br>
+						Por ultimo hay un tipo de texto el cual permite que el navegador lo visualice tal como aparece en el documento
+						respetando tabulaciones, saltos de linea y blancos. Se representa con la etiqueta <b>&ltpre&gt</b><br>
+						</dd>
+			<hr>
+				<!--LISTAS DESORDENADAS-->
+				<dt id="ul"><big><b>Manejo de listas: Lista de elementos no ordenada: &ltul&gt</big></b></dt>
+					<dd>Las listas de elementos no rodenadas se componen de dos etiquetas: <b>&ltul&gt</b> es la que indica que es una lista ordenada
+						y <b>&ltli&gt</b> que marca un elemento de la lista. Con el atributo <b>&lttype&gt</b> podemos diseñar el tipo de simbolo utilizado.<br><br>
+						A continuacion os dejo un ejemplo:</dd>
+						<ul type="disc" class="center">
+							<li>Elemento uno</li>
+							<li>Elemento dos</li>
+							<li>Elemento tres</li>
+
+						</ul>
+						<ul type="square" class="center">
+							<li>Elemento uno</li>
+							<li>Elemento dos</li>
+							<li>Elemento tres</li>
+
+						</ul>
+						<ul type="circle" class="center">
+							<li>Elemento uno</li>
+							<li>Elemento dos</li>
+							<li>Elemento tres</li>
+
+						</ul>
+			<hr>
+					<!--LISAS ORDENADAS-->
+				<dt id="ol"><big><b>Manejo de listas: Lista de elementos ordenados: &ltol&gt</big></b></dt>
+					<dd>Las listas de elementos ordenados se componen también de dos etiquetas: <b>&ltol&gt</b> que es la que indica que es una lista 
+						ordenada y <b>&ltli&gt</b> que indica un elemento de la lista. En este tipo de lista podemos destacar dos atributos: <b>&lttype&gt
+						</b>que especifica el tipo de simbolo que utiliza, <b>&ltstart&gt</b> que indica en que numero o simbolo debe empezar a contar 
+						la lista y <b>&ltreversed&gt</b> que lista los numeros al reves.<br><br>
+						A continuación voy a mostrar ejemplos con los distintos atributos:</dd>
+						<ol class="center">
+							<li>Elemento 1</li>
+							<li>Elemento 2</li>
+							<li>Elemento 3</li>
+						</ol>
+						<ol type="I" class="center">
+							<li>Elemento 1</li>
+							<li>Elemento 2</li>
+							<li>Elemento 3</li>
+						</ol>
+						<ol start="0" class="center">
+							<li>Elemento 1</li>
+							<li>Elemento 2</li>
+							<li>Elemento 3</li>
+						</ol>
+						<ol reversed="" class="center">
+							<li>Elemento 1</li>
+							<li>Elemento 2</li>
+							<li>Elemento 3</li>
+						</ol>
+					<!--LISTAS DE DEFINICIONES-->
+			<hr>
+				<dt id="dl"><big><b>Manejo de listas: Listas de definiciones: &ltdl&gt</big></b></dt>
+					<dd>Las listas de definiciones se definen por tres etiquetas: <b>&ltdl&gt</b> que es la que indica que es una lista de definiciones,
+						<b>&ltdt&gt</b> que especifica el termino a definir y <b>&ltdd&gt</b> que es la definicion de este termino.<br><br>
+						A continuacion os mostraré un ejemplo:</dd>
+						<dl class="center">
+							<dt><b>Etiqueta</b></dt>
+								<dd>Son fragmentos de texto rodeados por corchetes angulares < >, que tienen funciones y usos específicos y se utilizan para escribir código HTML.</dd>
+							<dt><b>Atributos</b></dt>
+								<dd>Son valores adicionales que configuran los elementos o ajustan su comportamiento de diversas formas para cumplir los criterios de los usuarios.</dd>
+						</dl>
+			<hr>
+					<!--ENLACES-->
+				<dt id="enlaces"><big><b>Enlaces: &lta&gt</b></big></dt>
+					<dd>Los enlaces en html sirven para establecer el origen y el destino de un hipervinculo. Con el atributo <b>href</b> indicamos a que destino nos llevará el enlace.<br>
+					Por ejemplo, os dejo un enlace a la página de <a href="http://es.lipsum.com">lorem ipsum.</a> Este enlace contiente su dirección, pero puedo renombrarla, en vez de poner su url. Además de la url tambien se puede acceder a otros tipos de direcciones.</dd>
+			<hr>
+					<!--IMAGENES-->
+				<dt id="imagenes"><big><b>Imagenes: &ltimg&gt</b></big></dt>
+					<dd>Esta etiqueta de linea sirve para introducir una imagen gracias al atributo <b>src</b> y a la direccion del archivo.Con los atributos <b>width</b> y <b>height</b> delimitamos el tamaño a visualizar la imagen y con <b>alt</b> le damos un pequeño titulo en caso de que la imagen no se visualizase. A continuación os introduzco una imagen aleatoria:</dd><br>
+					<img src="/Users/danielvidal/Documents/Unknown" width="200px" height="150px" alt="HackerMan" class="center"><br>
+
+			<hr>
+					<!--TABLAS-->
+				<dt id="tablas"><big><b>Tablas: &lttable&gt</b></big> </dt>
+					<dd>Esta etiqueta inserta una tabla de tamaño variable que puede contener filas, columnas, filas de encabezado,filas de pié, filas de cuerpo y cada fila o columna puede tener 0 o mas celdas. Esta etiqueta consta de varios atributos y subetiquetas:
+					La subetiqueta <b>&lttr&gt</b> crea una fila dentro de la tabla y las subetiquetas <b>&lttd&gt&ltth&gt</b> sirven para crear una celda, bien dentro de una fila, o de una cabecera.<br> Sus atributos principales son: <b>rowspan</b> que sirve para especificar el numero de filas que ocupa la celda y <b>coldspan</b> para especificar el numero de columnas de la celda.<br>
+					La tabla a su vez, como la estructura del documento se subdivide en 3 partes:<br>
+					<b>&ltthead&gt</b>, <b>&lttbody&gt</b> y <b>&lttfoot&gt</b>.<br><br>
+
+
+					<table rules="all" border="2px" cellpadding="5px" class="center" >
+						<thead><u>Tabla HTML</u></thead>
+						<tbody >
+							<tr>
+								<td>1</td>
+								<td>2</td>
+								<td>3</td>
+							</tr>
+							<tr>
+								<td colspan="2" align="center">5</td>
+								<td rowspan="2" align="center">9</td>
+							</tr>
+							<tr>
+								<td colspan="2" align="center">8</td>
+							</tr>
+						</tbody>
+					</table><br>
+					<br>
+					Para darle bordes a la tabla se debend e especificar los atributos <b>rules</b> para los bordes internos y <b>border</b> para el borde exterior. Tambien los datos de las celdas se pueden ajustar con el atributo <b>align</b> hacia la derecha, centro o izquierda.
+					</dd><br>
+			<hr>
+					<!--MAPA DE IMAGENES-->
+					<dt id="imapa"><big><b>Mapa de imagenes.</b></big></dt>
+						<dd>Los mapas de imagenes sirven para hacer interactivo el documento que se visualiza en el navegador.
+							Con la subetiqueta <b>&ltarea&gt</b> permite especificar una region geometrica y el vinculo asociado a esa región.
+							Además el atributo <b>shape</b> permite especificar el tipo de región <b>(default,red,arcle,poli)</b>, con <b>tcoords</b> especificamos la posición en pantalla.</dd>
+					<img usemap="#mapa" src="/Users/danielvidal/Documents/main.jpg" width="200px" height="200px">
+						<map name="mapa">
+							<area shape="rect" coords="0,0,40,200" href="#head">
+							<area shape="rect" coords="0,20,40,200" href="#body">
+							<area shape="rect" coords="0,120,200,200" href="#foot">
+						</map>
+			<hr>
+
+
+			</dl>
+			<dl>
+				<dt><big><b>FOOT: &ltfoot&gt</b></big></dt>
+					<dd>Esta etiqueta contiene los datos del autor del documento, contacto, copyrigth y una vuelta al top de la página.</dd>
+			</dl>
+	</body>
+	<hr>
+	<footer>
+		<p><u><b>Autor:</b></u> Daniel Vidal Holst.</p> <a href="#indice"> Vuelta al indice.</a>
+	</footer>
+</html>
